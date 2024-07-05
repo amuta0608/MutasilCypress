@@ -1,7 +1,7 @@
-@UI
+@regression
 Feature: Login
 
-@test
+@tc1 @loginonly
 Scenario: "Login Success"
 User success login with correct username and correct password
     Given I already on swaglab page
@@ -11,7 +11,7 @@ User success login with correct username and correct password
     And insert the password
     Then click the login button
     And Directly to the dashboard page
-@test
+@tc1
 Scenario: "Login Gagal Karena Username Salah"
 User insert incorrect username
     Given I already on swaglab page
@@ -21,7 +21,7 @@ User insert incorrect username
     And insert correct password
     Then click the login button
     And Show error message
-@test
+@tc1
 Scenario: "Login Gagal Karena Password Salah"
 User insert incorrect password
     Given I already on swaglab page
@@ -31,7 +31,7 @@ User insert incorrect password
     And insert incorrect password
     Then click the login button
     And Show error message
-@test
+@tc1
 Scenario: "Login Gagal Karena kolom kosong"
 User insert incorrect password
     Given I already on swaglab page
