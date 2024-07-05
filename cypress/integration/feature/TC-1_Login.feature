@@ -1,7 +1,7 @@
-@UI
+@regression
 Feature: Login
 
-@tc1
+@tc1 @loginonly
 Scenario: "Login Success"
 User success login with correct username and correct password
     Given I already on swaglab page
