@@ -6,18 +6,18 @@
   "scripts": {
     "test": "cypress open",
     "testScenario": "cypress run",
-    "test:tags": "cypress-tags run --tag @smoke",
+    "test:regression": "cypress run -e TAGS='@regression'",
     "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,json}'"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/scvcashenable/ce-qaAutomation.git"
+    "url": "git+https://github.com/amuta0608/MutasilCypress.git"
   },
   "author": "mutasil",
   "license": "ISC",
-  "homepage": "https://github.com/scvcashenable/ce-qaAutomation#readme",
+  "homepage": "https://github.com/amuta0608/MutasilCypress#readme",
   "bugs": {
-    "url": "https://github.com/scvcashenable/ce-qaAutomation/issues"
+    "url": "https://github.com/amuta0608/MutasilCypress/issues"
   },
   "dependencies": {
     "cucumber": "^6.0.7",
